@@ -1,1 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="icon" href="wikipedia.png" type="image/icon type">
+        <title>Vikepedi Özgür ansiklopedi  </title>
+</head>
+<style>
 
+
+html, body {
+font-family: sans-serif;
+
+}
+
+*{
+    box-sizing: border-box;
+
+}
+
+.sagnav {
+
+margin-right: 10px;
+
+}
+
+.solnav{
+
+margin-right: 150px;
+margin-left: 100px;
+
+}
+ .nav{
+
+   width: 80.6%; 
+   /* margin-right: 150px; */
+    margin-left: 75px;
+    /* margin-top: 100px; */
+    /* margin-bottom: 20px; */
+    /* float: left;
+    clear: left; */
+    /* margin-top: 200px; */
+    /* float: left;
+    clear: left; */
+    /* width: 2000px; */
+    /* height: 200px; */
+    border: 1px solid red;
+    margin-top: 10px;
+    /* padding-top: 500px; */
+    padding-top:45px ;
+ }
+
+
+.ara{
+width: 500px;
+height: 32px;
+margin-left: 100px;
+margin-top: 19px;
+border: 1px solid black;
+max-width: 1000px;
+
+float: left;
+
+
+}
+.foto{
+
+width: 50px;
+height: 50px;
+margin-left :10px;
+margin-right: 10px;
+float: left; 
+
+ /* content: ""; 
+clear: both; */
+}
+.header{
+    max-width: 1070px;
+border: 1px solid #c8ccd1;
+margin-left: 28px;
+margin-right: 100px;
+width: 70%;
+height: 120px;
+
+background-image: url(https://upload.wikimedia.org/wikipedia/commons/e/e3/Wikipedia_logo_letters_banner.svg);
+
+background-position: right;
+background-repeat: no-repeat;
+overflow: none;
+/* margin-top: 35px; */
+margin-bottom: 20px;
+/* padding: 10px; */
+display: inline-block;
+
+
+
+
+
+}
+
+ 
+#baslık {
+    /* content: "";
+    clear: both; */
+    display: inline-block;
+    float: left;
+    width: 50%;
+    /* background-color:linear-gradient(to right,#f8f9fa 0%,#f8f9fa 70%,rgba(248,249,250,0)100%); */
+    /* flex: 3; */
+    /* padding: 10px 20px ; */
+    line-height: 8px;
+    text-decoration: none;
+    /* padding-left: 0px; */
+    font-size: 29px;
+    
+
+}
+.solnav li  {
+float: left;
+list-style-type: none;
+display: inline-block;
+margin-bottom: 10px;
+
+}
+
+.sagnav li a{
+display: inline-block;
+color: #0645ad ;
+padding: 8px 10px;
+text-align: center;
+text-decoration: none;
+background-color: #ecf4f9;
+opacity: 0,1;
+border: 1px solid #a7d7f9;
+border-top: 10px;
+font-size: 13px;
+}
+
+
+
+.sagnav li {
+    float: right;
+
+    list-style-type: none;
+    display: inline-block;
+    /* margin-bottom: 10px; */
+
+    }
+.solnav li a{
+display: inline-block;
+color:#0645ad;
+padding: 8px 10px;
+text-align: center;
+text-decoration: none;
+background-color: #ecf4f9;
+opacity: 0,1;
+border: 1px solid #a7d7f9;
+border-top: none;
+margin-bottom: 10px;
+font-size: 12px;
+line-height: 14px;
+}
+.metinler {
+
+width: 70%;
+margin-left: 200px;
+margin-right: 100px;
+padding: 6px;
+
+
+
+}
+.altmetin{
+   
+     font-size: 14px;
+    font-family: sans-serif;
+    display: inline-block;
+    line-height: 22px;
+
+
+}
+
+#solmetin {
+    display: table-cell;
+/* float: left; */
+width: 50%;
+/* clear: both; */
+font-size: 14px;
+line-height: 22.4px;
+border:  1px solid black;
+padding : 6px;
+overflow: auto;
+/* content: ""; */
+/* margin-left: 200px;
+margin-right: 5px; */
+} 
+#sagmetin {
+
+    display: table-cell;
+font-size: 14px;
+line-height: 22.4px;
+border:  1px solid black;
+padding : 6px;
+width: 50%;
+
+}
+
+
+
+.haftabaslık  {
+    border: 1px solid blue;
+    background-color: #cedff2;
+    color: black;
+    /* padding-left: 10px;
+    padding-right: 10px; */
+    /* padding-top: 0px; */
+    
+}
+
+.haftaiş {
+border: 1px solid green;
+background-color: #a3ff9c;
+color: black;
+padding-left: 10px;
+padding-right: 10px;
+
+
+
+}
+.ym {
+
+    float: left;
+    padding-left: 30px;
+    padding-right: 50px;
+    font-size: 12px;
+    font-family: sans-serif;
+    margin-top: 5px;
+    line-height: 20px;
+    clear: both;
+    content: "";
+    /* background-color: #f8f9fa; */
+    /* background: linear-gradient(#ffffff,#f8f9fa); */
+}
+ .etiket  {
+
+    float: left;
+    padding-left: 10px;
+    font-weight: 5px;
+    padding-right: 10px;
+    
+ }
+ #mesaj {
+ background-color:#f8f9fa;
+ border: 1px solid #a2a9b1;
+ font-weight: bold;
+ display: inline-block;
+ padding: 5px ;
+ font-size: 14px;
+ float: right;
+
+
+
+ }
+
+.bil{
+display: table-cell;
+text-align: right;
+padding: 5px 12px;
+}
+.yanmenu ul li {
+
+
+    margin-left: 0px;
+    list-style-type: none;
+    font-size: 12px;
+    font-family: sans-serif;
+    line-height: 20px;
+    
+}
+
+#yanmenu {
+    margin-top: 20px;
+    background-image: linear-gradient(#ffffff 0%,#f8f9fa 10%,#f8f9fa 90%,#ffffff 100%);
+    /* background: linear-gradient(#ffffff,#f8f9fa); */
+    float: left;
+    clear: both;
+    
+}
+
+.yanmenu{
+float: left;
+margin-left: 0px;
+clear: both;
+/* background-color: #f8f9fa; */
+/* margin-top: 10px; */
+
+}
+.sagnav ul{
+
+    margin-right: 200px;
+
+
+}
+
+.a{
+float: left;
+ padding: 10px;
+}
+
+.b{
+float: left;
+margin-top: 10px;
+font-weight: 2px;
+/* clear: both;
+content: ""; */
+
+
+
+}
+
+.dıs {
+
+
+   /* margin-left: 50px;
+   margin-right:150px; */
+}
+
+
+.c{
+text-align: center;
+position: relative;
+/* float: right;
+clear: both;
+content: ""; */
+
+
+
+}
+.bugün {
+    background-color: #ffd6c0 ; 
+    border: 1px solid #efb596 ;
+    color: black;
+    padding-left: 10px;
+padding-right: 10px;
+
+
+}
+.bugün ul {
+
+    font-size: 17px;
+font-family: sans-serif;
+line-height: 22px;
+}
+
+
+
+
+ .material-icons {
+ float: left;
+ content: "";
+ clear: both;
+
+
+ }
+ 
+
+ #hesap {
+
+    float: right; 
+    
+    
+
+
+ } 
+</style>
+
+
+
+
+<body>
+
+
+
+
+
+        <div  class="e">
+
+            <span class="material-icons">
+                keyboard_double_arrow_left
+            </span>
+<div                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            vcvc    lass="a">
+     
+    
+    <img class="foto" src="wikipedia.png" alt=""  >
+    </div>
+    <div class="b">
+
+        <Span>  VİKİPEDİ  <br>
+            Özgür ansiklopedi 
+        </Span>
+        </div>
+        <div class="c">
+            <input class="ara" type="text" value=" Vikipedi üzerinde ara">
+            <!-- <span><b>...</b></span> -->
+
+        </div>
+        <span id="hesap" ><h4><b>Hesap Oluştur</b></h4></span>
+
+
+        </div>
+    
+
+<div  id="yanmenu">
+        <div class="yanmenu">
+
+            <ul class="ym">
+                <li><a href="#d">Anasayfa</a></li>
+                <li><a href="#e">Hakkımızda</a></li>
+                <li><a href="#r">İçindekiler</a></li>
+                <li><a href="#t">Rastgel madde</a></li>
+                <li><a href="#y">Seçkin içerek</a></li>
+                <li><a href="#y">Yaknımdakiler</a></li>
+                
+            </ul>
+        </div>
+
+        <div class="yanmenu" id="menu2">
+
+            
+
+            <ul class="ym">
+                <span>Katılım</span><br><hr>
+                <li><a href="#">Bağış yapın</a></li>
+                <li><a href="#">Deneme tahtası</a></li>
+                <li><a href="#">İş birliği projesi</a></li>
+                <li><a href="#">Köy çeşmesi</a></li>
+                <li><a href="#">Son değişikler</a></li>
+                <li><a href="#">Topluluk portali</a></li>
+                <li><a href="#">Wikimedia dükkanı</a></li>
+                <li><a href="#">Yardım</a></li>
+            </ul>
+          </div>
+
+          <div class="yanmenu" id="menu3">
+             
+              <ul class="ym">
+                <span>Araçlar</span><hr>
+                  <li><a href="#"></a></li>
+                  <li><a href="#"></a></li>
+                  <li><a href="#"></a></li>
+                  <li><a href="#"></a></li>
+                  <li><a href="#"></a></li>
+              </ul>
+
+
+          </div>
+        </div>
+
+   <div class="nav">
+  <div>
+    <ul class="solnav">
+        <li><a href="#anasayfa">Ana Sayfa</a></li>
+        <li><a href="#Tartıma">Tartışma</a></li>
+    </ul>
+</div>
+<div>
+<ul class="sagnav">
+    <li><a href="#Geçmişigör">Geçmişi gör</a></li>
+    <!-- <li><a href="#Bekleyen değişikler">Kaynağı gör</a></li> -->
+    <li><a href="#kaynağı gör">Bekleyen değişikler</a></li>
+    <li><a href="#Geçmişigör">Oku</a></li>
+</ul>
+
+</div>
+
+
+   </div>
+
+   
+
+    <div class="dıs">
+
+
+
+
+<div class="header">
+
+    <div class="baslık" id="baslık">
+<p> <a style="text-decoration: none;" href="#">Vikipedi'ye</a>Hoş Geldiniz </p> 
+<p style="font-size: 14px;">Herkesin katkıda bulanabildiği özgür ansiklopedi</p>
+</div>
+<div class="bil">
+<p> <a href="#">Türkçe </a>Vikipedi'deki Madde sayısı  <b> <a href="#">424.568</a></b></p>
+<div class="etiket" >
+    <ul >
+<span><b>Cesur ol</b>&nbsp; &nbsp; </span>
+<span><b>Nasıl ? </b>&nbsp; &nbsp;</span>
+<span id="mesaj" ><b>Madde oluştur</b> &nbsp;</span>
+</ul>
+</div>
+
+</div>
+
+</div>
+<!-- <p style="width: 65%; margin-left: 175px;">
+
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, numquam? Quo eaque cumque veniam ipsam mollitia enim reprehenderit quas cum ea nulla, voluptatum vitae cupiditate eius! Magni eos sit enim.
+
+</p> -->
+
+<div class="metinler" >
+    <div class="altmetin" id="solmetin">
+<h3 class="haftabaslık">Haftanın seçkin maddesi</h3>
+<p class="hafta" s>
+    <img  class="haftafoto" src="solmetin.png" alt="" style="float: left;">
+    George Constant Louis Washington (20 Mayıs 1871 - 29 Mart 1946), Anglo-Belçika asıllı Amerikalı mucit ve iş adamıdır. Geliştirdiği hazır kahve hazırlama yöntemi ve bunun seri üretimini gerçekleştirmek amacıyla kurduğu G. Washington Coffee Company adlı şirketle tanınmıştır.
+    Belçika doğumlu olan Washington 1897 yılında Amerika Birleşik Devletleri'nin New York bölgesine yerleşmiş, teknik alanlardaki birçok başarısız girişimin ardından hazır kahve üretimine başlamıştır. Orta Amerika'da bulunduğu 1906-1907 yılları arasında elde ettiği deneyimle 1909'da kendi ürettiği kahveyi satmaya başlayan Washington, üretimi hızlandırmak amacıyla 1910 yılında bir şirket kurmuştur. New York ve New Jersey merkezli şirket kısa sürede büyümüş ve ABD ordusunun I. Dünya Savaşı sırasındaki kahve gereksiniminin büyük bölümünü karşılamıştır. Reklamları New York gazete ve radyolarında da yayınlanan şirketin ulaştığı başarı Washington'ı varsıl kılmış; sonuçta mucit Brooklyn'de kaldığı konağın ardından 1927 yılında New Jersey'de bir malikâneye taşınmıştır. <span><b><a href="#devam">(Devamı...)</a></b></span>
+</p>
+</div>
+
+
+
+<div class="altmetin" id="sagmetin">
+    <h3 class="haftaiş" >Haftanın iş birliği</h3>
+    <img src="sagmetin.jpg" alt="" style="float: right;">
+    <p> 
+        Herkesi  <b> "Farklı sayfalardan kendisine birçok bağlantı verilmiş tarih maddelerinin oluşturulması" </b> konulu iş birliği projesine davet ediyoruz!
+<ul>
+      <li>  Oluşturulacak maddelere buradan ulaşabilirsiniz.</li>
+       
+    <li>Katkılarınızla puan toplayabilir, haftanın sonunda ilk beşe girerek "Tarih Yıldızı" kazanabilir ve kullanıcı sayfanızda sergileyebilirsiniz.
+    </li> 
+    </ul>
+    </p>
+    <div class="bugün1">
+    <h3 class="bugün">Tarihte bugün</h3>
+<p> 
+    <h3>Olaylar</h3> 
+<ul>
+    <li>1758-Yedi yıl Savaşları:Prusya Kralı 2.Frederick, rus ordsunu</li>
+    <li>1758-Yedi yıl Savaşları:Prusya Kralı 2.Frederick, rus ordsunu</li>
+    <li>1758-Yedi yıl Savaşları:Prusya Kralı 2.Frederick, rus ordsunu</li>
+    <li>1758-Yedi yıl Savaşları:Prusya Kralı 2.Frederick, rus ordsunu</li>
+    <li>1758-Yedi yıl Savaşları:Prusya Kralı 2.Frederick, rus ordsunu</li>
+    <li>1758-Yedi yıl Savaşları:Prusya Kralı 2.Frederick, rus ordsunu</li>
+    <li>1758-Yedi yıl Savaşları:Prusya Kralı 2.Frederick, rus ordsunu</li>
+    <li>1758-Yedi yıl Savaşları:Prusya Kralı 2.Frederick, rus ordsunu</li>
+    <li>1758-Yedi yıl Savaşları:Prusya Kralı 2.Frederick, rus ordsunu</li>
+    <li>1758-Yedi yıl Savaşları:Prusya Kralı 2.Frederick, rus ordsunu</li>
+</ul>
+    </p>
+</div>
+</div>
+</div>
+
+
+
+
+    </div>
+</body>
+</html>
